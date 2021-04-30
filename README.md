@@ -9,7 +9,7 @@ manual invocation of those scripts make them practically unusable.
 3. Updating script - find script with matching name and replace content & Save.
 4. Go to game page and profit (reload page to apply scripts).
 
-##Scripts
+## Scripts
 * [Battle Report Enhancer](#Battle-Report-enhancer) - [script](./build/battleReportEnhancer.js)
 * [Map Unit Landing Times](#Map-Unit-Landing-Times) - [script](./build/mapUnitArrival.js)
 
@@ -30,15 +30,18 @@ Loads game world configuration for buildings so cost of damaged buildings can be
 Use browser local storage to cache those configs - those data are static no need to fetch them frequently.
 
 ### Usage
-Download ViolentMonkey extension to your browser and then add content of file [/build/reportEnhancer.js](./build/battleReportEnhancer.js) as new script.
+Download ViolentMonkey extension to your browser and then add content of file [./build/reportEnhancer.js](./build/battleReportEnhancer.js) as new script.
 
 ## Map Unit Landing Times
 ### Purpose
 Enhance map screen.
 Add landing times for each unit type calculated from currently selected village and current date time. Those data are 
 displayed when pointing to some village. Green color indicate arrival during 'day' period. Red text arrival during night bonus period.
-![alt text](./examples/map-landing-times.png "Unit landing times")
+![alt text](./examples/mapUnitArrival.png "Unit arrival times")
 
 ### What resource script uses?
 Loads game world configuration so night bonus period can be calculated. From `<worldUrl>/interface.php?func=get_config`.
 Store cached config in browser local storage.
+
+Usage
+Download ViolentMonkey extension to your browser and then add content of file [./build/mapUnitArrival.js](./build/mapUnitArrival.js) as new script.
