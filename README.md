@@ -10,8 +10,8 @@ manual invocation of those scripts make them practically unusable.
 4. Go to game page and profit (reload page to apply scripts).
 
 ## Scripts
-* [Battle Report Enhancer](#Battle-Report-enhancer) - [script](./build/battleReportEnhancer.js)
-* [Map Unit Landing Times](#Map-Unit-Landing-Times) - [script](./build/mapUnitArrival.js)
+* [Battle Report Enhancer](#Battle-Report-enhancer) - content of the script [./build/battleReportEnhancer.js](./build/battleReportEnhancer.js)
+* [Map Unit Landing Times](#Map-Unit-Landing-Times) - content of the script [./build/mapUnitArrival.js](./build/mapUnitArrival.js)
 
 ## Battle Report enhancer
 <span style="color:red">This script require localization for correct behavior (parsing damage done to buildings). Supported ones are now: CZ</span>.
@@ -43,5 +43,5 @@ displayed when pointing to some village. Green color indicate arrival during 'da
 Loads game world configuration so night bonus period can be calculated. From `<worldUrl>/interface.php?func=get_config`.
 Store cached config in browser local storage.
 
-Usage
+## Usage
 Download ViolentMonkey extension to your browser and then add content of file [./build/mapUnitArrival.js](./build/mapUnitArrival.js) as new script.
