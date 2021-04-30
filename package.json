@@ -1,0 +1,27 @@
+{
+  "devDependencies": {
+    "@types/jquery": "3.5.1",
+    "ts-loader": "^8.0.17",
+    "typescript": "^4.1.5",
+    "webpack": "^5.21.2",
+    "webpack-cli": "^4.5.0",
+    "ts-node": "^9.1.1"
+  },
+  "scripts": {
+    "build": "yarn build-dev",
+    "local": "ts-node build/main.js",
+    "test": "echo \"All tests ran successfully\" && exit 0",
+    "build-dev": "webpack --config webpack.dev.js",
+    "build-prod": "webpack --config webpack.prod.js"
+  },
+  "name": "tw_scripts",
+  "version": "0.1.0",
+  "dependencies": {
+    "stream": "^0.0.2",
+    "timers": "^0.1.1",
+    "buffer": "^6.0.3",
+    "xml2js": "^0.4.23",
+    "@types/xml2js": "^0.4.8",
+    "uglifyjs-webpack-plugin": "^2.2.0"
+  }
+}
